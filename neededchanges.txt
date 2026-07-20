@@ -1,0 +1,8 @@
+1)singe command executable-all in one integrated project(analyse the project properly and integrate it)
+2)need two switch options to scan(domain scan and extended scan)
+3)need download option to download the obtained data in (txt, word, pdf, xml) and send results in email send options(can be configured using a input box in the download option[user should input their email in that box to receive it])
+4)error during giving org name if any space on the name then it is not executing(fix this issue)
+5)need to add register option in the login page
+6)if possible google or otp based login
+7)need multiple dashboard for each feature(seperte page when scan is initiated and history page where user can view or download the results)
+8)optional-if possible make this project into a docker which can run without any errors in multiple different systems(stricly dont change the core logic of the project and its performance)

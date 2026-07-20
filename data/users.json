@@ -1,0 +1,32 @@
+{
+  "admin@team.com": {
+    "email": "admin@team.com",
+    "password": "$2b$12$c6UsG9Xbjnyw.QYuUqed1uqOl9XxXvebk3ktmC.kbW9FC5f4YksCW",
+    "name": "Admin User",
+    "role": "admin"
+  },
+  "user@123.com": {
+    "email": "user@123.com",
+    "password": "$2b$12$DlfdrYfITktGxc841.bKKePjfuo/iSIwJZnHO1alftBF8zQXm3qgO",
+    "name": "Team User",
+    "role": "user"
+  },
+  "raguls0804@gmail.com": {
+    "email": "raguls0804@gmail.com",
+    "password": "$2b$12$HDihQ01IYpYhJBVzG3cCKOti2QFbmG4MIvZDPk0kf794RlJB5gTii",
+    "name": "ragul",
+    "role": "user"
+  },
+  "raguls0812@gmail.com": {
+    "email": "raguls0812@gmail.com",
+    "password": "$2b$12$2ImbV/Y6PK/y/HLY9wxFbOG10yo7p5de.qfGxpMRCdAPdGBAuSCe.",
+    "name": "ragul1",
+    "role": "user"
+  },
+  "gokulakrishnanp016@gmail.com": {
+    "email": "gokulakrishnanp016@gmail.com",
+    "password": "$2b$12$T.YPOj25oLbj.WTHtgQR7ew0YT.UdVROPykqSCbpFM78e/ZgzZQ0u",
+    "name": "gokul",
+    "role": "user"
+  }
+}

@@ -1,0 +1,25 @@
+Engine:
+  path: "/usr/local/bin:/usr/bin:/bin:/usr/local/go/bin"
+  scan-profiles:
+    domain:
+      cmd-recon:
+        - "subfinder -dL {target}/all.txt -o {target}/subfinder.txt -all"
+    extended:
+      cmd-recon:
+        - "subfinder -dL {target}/all.txt -o {target}/subfinder.txt -all"
+        - "naabu -list {target}/subfinder.txt -o {target}/naabu.txt"
+        - "httpx -list {target}/naabu.txt -o {target}/live.txt"
+  cmd-recon:
+    - "subfinder -dL {target}/all.txt -o {target}/subfinder.txt -all"
+    - "naabu -list {target}/subfinder.txt -o {target}/naabu.txt"
+    - "httpx -list {target}/naabu.txt -o {target}/live.txt"
+
+Notifications:
+  smtp:
+    host: "smtp.gmail.com"
+    port: 587
+    username: "webreconemail@gmail.com"
+    password: "ywhg srbl aqxd abdx"
+    sender: "webrecon.service"
+    use_tls: true
+    use_ssl: false
