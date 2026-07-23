@@ -1,4 +1,310 @@
-# Web-Recon (projectfinal)
+# Unified GUI-Based Framework for Automated Web Application Reconnaissance and Attack Surface Analysis
+
+<p align="center">
+  <img src="docs/images/logo.png" width="180" alt="Project Logo">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue.svg">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-green.svg">
+  <img src="https://img.shields.io/badge/License-MIT-orange.svg">
+  <img src="https://img.shields.io/badge/Security-Reconnaissance-red.svg">
+</p>
+
+---
+
+## 📖 Overview
+
+Reconnaissance is the first and one of the most critical phases of penetration testing and bug bounty hunting. Existing workflows require security analysts to manually execute multiple command-line tools, collect scattered outputs, and correlate results manually.
+
+This project provides a **Unified GUI-Based Framework** that automates the complete reconnaissance pipeline by integrating multiple industry-standard tools into a single platform.
+
+The framework automates:
+
+- Subdomain Enumeration
+- Port Scanning
+- Live Host Detection
+- Attack Surface Correlation
+- Report Generation
+
+through an intuitive web interface powered by **FastAPI**.
+
+---
+
+# ✨ Features
+
+- 🔍 Automated Subdomain Enumeration
+- ⚡ High-Speed Port Scanning
+- 🌐 Live HTTP/HTTPS Host Detection
+- 📊 Attack Surface Correlation
+- 🔐 JWT Authentication
+- 🔑 Secure Password Hashing (Bcrypt)
+- 📈 Real-Time Scan Monitoring
+- 📂 Scan History Management
+- 📄 Multi-format Report Generation
+- 📧 Email Report Delivery
+- 📦 JSON-based Storage
+- 🎯 Queue-Based Scan Processing
+
+---
+
+# 🏗 Architecture
+
+```
+                    User
+                      │
+          Login / Authentication
+                      │
+               FastAPI Backend
+                      │
+              Queue Management
+                      │
+            Recon Pipeline Engine
+                      │
+      ┌─────────┬─────────┬─────────┐
+      │         │         │
+  Subfinder   Naabu     Httpx
+      │         │         │
+      └─────────┴─────────┘
+              Correlation Engine
+                      │
+             JSON Data Storage
+                      │
+ Dashboard • Reports • History
+```
+
+---
+
+# 🔄 Workflow
+
+```
+Target Domain
+      │
+      ▼
+Subfinder
+      │
+Discovered Subdomains
+      │
+      ▼
+Naabu
+      │
+Open Ports
+      │
+      ▼
+Httpx
+      │
+Live Hosts
+      │
+      ▼
+Correlation Engine
+      │
+      ▼
+Dashboard & Reports
+```
+
+---
+
+# 🛠 Tech Stack
+
+## Backend
+
+- Python
+- FastAPI
+- Uvicorn
+- AsyncIO
+
+## Security
+
+- JWT Authentication
+- Bcrypt Password Hashing
+
+## Reconnaissance Tools
+
+- Subfinder
+- Naabu
+- Httpx
+
+## Storage
+
+- JSON
+
+## Reporting
+
+- TXT
+- DOC
+- PDF
+- XML
+
+---
+
+# 📂 Project Structure
+
+```
+project/
+│
+├── backend/
+│   ├── auth/
+│   ├── routes/
+│   ├── pipeline/
+│   ├── storage/
+│   ├── reports/
+│   ├── jobs/
+│   └── utils/
+│
+├── frontend/
+│
+├── docs/
+│   ├── architecture.png
+│   ├── screenshots/
+│   └── workflow.png
+│
+├── reports/
+│
+├── scans/
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+# 🚀 Reconnaissance Pipeline
+
+```
+Subfinder
+      │
+      ▼
+Enumerate Subdomains
+
+      │
+      ▼
+Naabu
+      │
+Scan Open Ports
+
+      │
+      ▼
+Httpx
+      │
+Detect Live Services
+
+      │
+      ▼
+Correlation Engine
+
+      │
+      ▼
+Generate Reports
+```
+
+---
+
+# 🔐 Security Features
+
+- JWT Authentication
+- Password Hashing (Bcrypt)
+- Input Validation
+- Rate Limiting
+- Secure API Endpoints
+- Background Task Execution
+
+---
+
+# 📊 Reports
+
+The framework supports exporting reports in multiple formats.
+
+- TXT
+- DOC
+- PDF
+- XML
+
+Reports can also be sent directly through Email.
+
+---
+
+# 📸 Screenshots
+
+## Login
+
+```
+docs/screenshots/login.png
+```
+
+---
+
+## Dashboard
+
+```
+docs/screenshots/dashboard.png
+```
+
+---
+
+## Scan Results
+
+```
+docs/screenshots/results.png
+```
+
+---
+
+## Report Generation
+
+```
+docs/screenshots/report.png
+```
+
+---
+
+# 🎥 Proof of Concept (POC)
+
+Watch the complete demonstration of the framework:
+
+```
+https://youtu.be/YOUR_VIDEO_LINK
+```
+
+---
+
+# 🎯 Future Enhancements
+
+- Nuclei Integration
+- Katana Integration
+- Shodan Integration
+- AI-based Risk Scoring
+- PostgreSQL Support
+- Docker Deployment
+- Kubernetes Deployment
+- Distributed Scan Workers
+- CVE Mapping
+- Asset Inventory Dashboard
+
+---
+
+# ⚠ Disclaimer
+
+This project is intended **only for educational purposes and authorized security assessments**.
+
+The developers are **not responsible** for any misuse of this project.
+
+Always obtain proper authorization before scanning any target.
+
+---
+
+# 👨‍💻 Author
+
+**Gokulakrishnan P**
+
+Cybersecurity Enthusiast
+
+- eJPT Certified
+- Penetration Tester
+- Python Developer
+- Bug Bounty Learner
+
+# Project Implementation Steps
 
 Integrated reconnaissance platform with:
 - FastAPI backend + static UI served from one process
