@@ -1,10 +1,6 @@
 # Unified GUI-Based Framework for Automated Web Application Reconnaissance and Attack Surface Analysis
 
 <p align="center">
-  <img src="docs/images/logo.png" width="180" alt="Project Logo">
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue.svg">
   <img src="https://img.shields.io/badge/FastAPI-Backend-green.svg">
   <img src="https://img.shields.io/badge/License-MIT-orange.svg">
