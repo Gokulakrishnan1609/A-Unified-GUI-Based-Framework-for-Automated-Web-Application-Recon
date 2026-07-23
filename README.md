@@ -137,38 +137,6 @@ Dashboard & Reports
 
 ---
 
-# 📂 Project Structure
-
-```
-project/
-│
-├── backend/
-│   ├── auth/
-│   ├── routes/
-│   ├── pipeline/
-│   ├── storage/
-│   ├── reports/
-│   ├── jobs/
-│   └── utils/
-│
-├── frontend/
-│
-├── docs/
-│   ├── architecture.png
-│   ├── screenshots/
-│   └── workflow.png
-│
-├── reports/
-│
-├── scans/
-│
-├── README.md
-│
-└── requirements.txt
-```
-
----
-
 # 🚀 Reconnaissance Pipeline
 
 ```
@@ -224,40 +192,6 @@ Reports can also be sent directly through Email.
 
 ---
 
-# 📸 Screenshots
-
-## Login
-
-```
-docs/screenshots/login.png
-```
-
----
-
-## Dashboard
-
-```
-docs/screenshots/dashboard.png
-```
-
----
-
-## Scan Results
-
-```
-docs/screenshots/results.png
-```
-
----
-
-## Report Generation
-
-```
-docs/screenshots/report.png
-```
-
----
-
 # 🎥 Proof of Concept (POC)
 
 Watch the complete demonstration of the framework:
@@ -271,15 +205,11 @@ https://youtu.be/YOUR_VIDEO_LINK
 # 🎯 Future Enhancements
 
 - Nuclei Integration
-- Katana Integration
 - Shodan Integration
 - AI-based Risk Scoring
 - PostgreSQL Support
-- Docker Deployment
-- Kubernetes Deployment
 - Distributed Scan Workers
 - CVE Mapping
-- Asset Inventory Dashboard
 
 ---
 
